@@ -17,4 +17,4 @@
 
   - name: convert map to list
     ansible.builtin.debug:
-      msg: "Tags are: {{tags | dict2times}}"
+      msg: "Tags are: {{ tags | dict2items }}"
