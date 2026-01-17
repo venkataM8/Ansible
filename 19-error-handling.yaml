@@ -9,5 +9,5 @@
     ignore_errors: true
 
   - name: print the output
-    anisble.builtin.debug:
+    ansible.builtin.debug:
       msg: "{{user_output}}"
