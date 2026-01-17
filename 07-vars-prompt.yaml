@@ -5,8 +5,11 @@
   - name: username
     prompt: please enter the username
     private: false
+  - name: password
+    prompt: please enter the password
+    private: true
   tasks:
   - name: print credentials
     ansible.builtin.debug:
-      msg: "Hello, Username is: {{username}}"
+      msg: "Hello, Username is: {{username}}, password is: {{password}}"
 
