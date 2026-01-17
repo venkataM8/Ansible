@@ -4,4 +4,4 @@
   tasks:
   - name: default variables
     ansible.builtin.debug:
-      msg: "hello, {{name}}"
+      msg: "hello, {{name | default('venkata')}}"
