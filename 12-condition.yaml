@@ -1,12 +1,11 @@
 - name: conditions
   hosts: local
   connection: local
-  vars_prompt:
-  - name: NUMBER
-    prompt: Please enter the number
+  vars:
+    NUMBER: 12
   tasks:
   - name: check the number id lesss than 10 or not
     ansible.builtin.debug:
       msg: "given number {{NUMBER}} is less than 10"
-    when: NUMBER < '10'
+    when: NUMBER < 10
 
