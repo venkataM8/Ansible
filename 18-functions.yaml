@@ -35,3 +35,8 @@
   - name: covert yaml into json
     ansible.builtin.debug:
       msg: "Json: {{ student_yaml | to_json }}"
+
+  - name: save json to file
+    ansible.builtin.copy:
+      dest: ./student.json
+      conetent: "Json: {{ student_yaml | to_nice_json }}"
