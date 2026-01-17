@@ -5,7 +5,7 @@
     technologies: devops, linux, shell, Ansible #string
     name: "Venkata Mallikarjuna"
     email: "VenkataMalLiKa@Gmail.com"
-    ipaddress: 1234.2345.4567.234
+    ipaddress: 192.168.10.5
     tags:
       Application: payment
       Enviroment: dev
