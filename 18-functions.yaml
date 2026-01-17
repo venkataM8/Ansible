@@ -34,4 +34,4 @@
 
   - name: covert yaml into json
     ansible.builtin.debug:
-      msg: "Json: {{ student_yaml | to_json }}
+      msg: "Json: {{ student_yaml | to_json }}"
