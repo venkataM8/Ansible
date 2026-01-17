@@ -58,7 +58,7 @@
 
   - name: grep for root
     ansible.builtin.shell: cat /etc/passwd | grep root
-    resiter: command_output
+    register: command_output
 
   - name: print the register value
     ansible.builtin.debug:
@@ -66,7 +66,7 @@
 
   - name: redirect the command_output
     ansible.builtin.shell: ls -lrt > /tmp/output.txt
-    resiter: redirect.output
+    register: redirect.output
 
   - name: print redirect.output
     ansible.builtin.debug:
