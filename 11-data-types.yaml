@@ -12,7 +12,7 @@
     concepts: #deictonary/map
       cloud: aws
       cm: ansible
-  task:
+  tasks:
   - name: print course details
     ansible.builtin.debug:
       msg: "course name: {{course}}, duration is:{{Duration}}, is it live: {{is_live}}, tools are : {{tools}} concepts are: {{concepts}}"
