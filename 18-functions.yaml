@@ -5,6 +5,7 @@
     technologies: devops, linux, shell, Ansible #string
     name: "Venkata Mallikarjuna"
     email: "VenkataMalLiKa@Gmail.com"
+    ipaddress: 1234.2345.4567.234
     tags:
       Application: payment
       Enviroment: dev
@@ -51,3 +52,6 @@
     ansible.builtin.debug:
       msg: " lowercase {{email|lower}}"
 
+  - name: check ip is valid or not
+    ansible.builtin.debug:
+      msg: "{{ipaddress|ansible.utils.ipv4}}"
