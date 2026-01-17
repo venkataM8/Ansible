@@ -3,6 +3,7 @@
   connection: local
   vars:
     technologies: devops, linux, shell, Ansible #string
+    name: "Venkata Mallikarjuna"
     tags:
       Application: payment
       Enviroment: dev
@@ -40,3 +41,8 @@
     ansible.builtin.copy:
       dest: ./student-data.json
       content: "Json: {{ student_yaml | to_nice_json }}"
+
+  - name: covert to uppercase
+    ansible.builtin.debug:
+      msg: " Uppercasw {name|upper}"
+
