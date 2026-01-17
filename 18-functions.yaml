@@ -4,6 +4,7 @@
   vars:
     technologies: devops, linux, shell, Ansible #string
     name: "Venkata Mallikarjuna"
+    email: "VenkataMalLiKa@Gmail.com"
     tags:
       Application: payment
       Enviroment: dev
@@ -44,5 +45,9 @@
 
   - name: covert to uppercase
     ansible.builtin.debug:
-      msg: " Uppercasw {name|upper}"
+      msg: " Uppercase {{name|upper}}"
+
+  - name: covert to lowercase
+    ansible.builtin.debug:
+      msg: " lowercase {{email|lower}}"
 
